@@ -466,7 +466,7 @@ public class OnlineActivity extends CommonActivity {
 	}
 	
 	public void checkTrial(boolean notify) {
-        if (!BuildConfig.DEBUG) {
+        if (!BuildConfig.DEBUG && false) {
 
             boolean isTrial = getPackageManager().checkSignatures(
                     getPackageName(), "org.fox.ttrss.key") != PackageManager.SIGNATURE_MATCH;
